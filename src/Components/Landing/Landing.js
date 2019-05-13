@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import './landing.css'
 
-import logo from '../Assets/twitter_flipped.png';
-import phone from '../Assets/iphone_mockup.png';
+import logo from '../../Assets/twitter_flipped.png';
+import phone from '../../Assets/iphone_mockup.png';
 
 const Landing = () => {
 
     const [ menu, setMenu ] = useState(false);
 
-    const show = (menu) ? "show" : "" 
+    const show = menu ? "show" : "" 
 
     return (
         <div>
-        <div className="container-fluid" style={{ padding: '2% 5%', height: '100vh' }}>
+        <div className="container-fluid landing-container">
 
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 
@@ -21,26 +22,26 @@ const Landing = () => {
             <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={`collapse navbar-collapse ${show}`} id="navbarTogglerDemo02">
+        <div className={`collapse navbar-collapse ${show}`}>
 
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item ml-auto" style={{ padding: '0 10px' }}>
+            <li className="nav-item ml-auto landing-nav-item">
               <a className="nav-link">Apps</a>
             </li>
-            <li className="nav-item ml-auto" style={{ padding: '0 10px' }}>
+            <li className="nav-item ml-auto landing-nav-item">
               <a className="nav-link">About Us</a>
             </li>
-            <li className="nav-item ml-auto" style={{ padding: '0 10px' }}>
+            <li className="nav-item ml-auto landing-nav-item">
               <a className="nav-link">Support</a>
             </li>
-            <li className="nav-item ml-auto" style={{ padding: '0 10px' }}>
+            <li className="nav-item ml-auto landing-nav-item">
               <a className="nav-link">Login</a>
             </li>
           </ul>
 
         </div>
       </nav>
-      <div className="row" style={{ paddingTop: "7%" }}>
+      <div className="row landing-first">
 
         <div className="col-lg-6">
           <h1 className="animated fadeIn"><strong>Twitter Clone</strong></h1>
@@ -55,7 +56,7 @@ const Landing = () => {
 
       </div>
       </div>
-      <div class="container-fluid" style={{ padding: '2% 5%', backgroundColor: 'whitesmoke', height: '100vh' }}>
+      <div class="container-fluid bg-light landing-container">
 
       <div className="row">
 

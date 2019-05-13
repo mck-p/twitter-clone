@@ -1,0 +1,21 @@
+.landing-container {
+    padding: 2% 5%;
+    height: 100vh;
+}
+
+.landing-nav-item {
+    padding: 0 10px;
+}
+
+.landing-first {
+    padding-top: 7%;
+}
+
+@media screen and (max-width: 600px) {
+    .landing-first {
+        padding-top: 15%;
+      
+    }
+}
+
+
